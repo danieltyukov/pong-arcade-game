@@ -20,7 +20,17 @@ public class GamePanel extends JPanel implements Runnable {
   Ball ball;
   Score score;
 
-  GamePanel() {}
+  GamePanel() {
+    newPaddles();
+    newBall();
+    score = new Score(GAME_WIDTH, GAME_HEIGHT);
+    this.setFocusable(true);
+    this.addKeyListener(new AL());
+    this.setPreferredSize(SCREEN_SIZE);
+
+    gameThread = new Thread(this);
+    gameThread.start();
+  }
 
   public void newBall() {}
 

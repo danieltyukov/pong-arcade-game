@@ -6,6 +6,7 @@ public class GameFrame extends JFrame {
   GamePanel panel = new GamePanel();
 
   GameFrame() {
+    panel = new GamePanel();
     this.add(panel);
     this.setTitle("Pong Game");
     this.setResizable(false);
