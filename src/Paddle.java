@@ -5,6 +5,10 @@ import javax.swing.*;
 
 public class Paddle extends Rectangle {
 
+  int id;
+  int yVelocity;
+  int speed = 10;
+
   Paddle() {}
 
   public void keyPressed(KeyEvent e) {}

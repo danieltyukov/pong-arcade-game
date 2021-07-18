@@ -3,10 +3,9 @@ import javax.swing.*;
 
 public class GameFrame extends JFrame {
 
-  GamePanel panel;
+  GamePanel panel = new GamePanel();
 
   GameFrame() {
-    panel = new GamePanel();
     this.add(panel);
     this.setTitle("Pong Game");
     this.setResizable(false);

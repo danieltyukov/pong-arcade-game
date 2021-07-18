@@ -5,6 +5,11 @@ import javax.swing.*;
 
 public class Ball extends Rectangle {
 
+  Random random;
+  int xVelocity;
+  int yVelocity;
+  int initialSpeed = 2;
+
   Ball() {}
 
   public void setXDirection(int randomXDirection) {}
